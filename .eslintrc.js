@@ -28,13 +28,10 @@ module.exports = {
 	},
 	'plugins': [
 		'@typescript-eslint',
-		'react'
+		'react',
+		'prettier'
 	],
 	'rules': {
-		'indent': [
-			'error',
-			'tab'
-		],
 		'linebreak-style': [
 			'error',
 			'unix'
@@ -46,6 +43,19 @@ module.exports = {
 		'semi': [
 			'error',
 			'always'
-		]
+		],
+		'prettier/prettier': [
+      'error',
+      {
+        'printWidth': 140,
+        'tabWidth': 'tab',
+        'useTabs': true,
+        'semi': true,
+        'singleQuote': true,
+        'trailingComma': 'none',
+        'bracketSpacing': true,
+        'arrowParens': 'always'
+      }
+    ]
 	}
 };
