@@ -11,7 +11,7 @@ const Footer = (): React.ReactNode => {
       <AppBar component="footer" position="static" sx={{ backgroundColor: '#fff' }}>
         <Container maxWidth="md">
           <Box sx={{ textAlign: 'center' }}>
-            <Typography variant="caption">
+            <Typography variant="caption" sx={{ color: 'black' }}>
               ©2023 Kumampet
             </Typography>
           </Box>
