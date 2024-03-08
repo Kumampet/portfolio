@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 const Footer = (): React.ReactNode => {
   return (
     <React.Fragment>
-      <AppBar component="footer" position="static" sx={{ backgroundColor: '#000000' }}>
+      <AppBar component="footer" position="static" sx={{ backgroundColor: '#fff' }}>
         <Container maxWidth="md">
           <Box sx={{ textAlign: 'center' }}>
             <Typography variant="caption">
