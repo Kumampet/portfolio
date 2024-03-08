@@ -16,9 +16,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang='ja'>
       <body className={inter.className}>
-        <CustomAppBar />
-        {children}
-        <Footer/>
+        <div className="root-layout-flex-container">
+          <CustomAppBar />
+          <div className="root-layout-contents-box">
+            {children}
+          </div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
