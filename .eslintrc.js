@@ -6,7 +6,8 @@ module.exports = {
 	'extends': [
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
-		'plugin:react/recommended'
+		'plugin:react/recommended',
+		"plugin:@typescript-eslint/recommended-requiring-type-checking"
 	],
 	'overrides': [
 		{
@@ -17,14 +18,16 @@ module.exports = {
 				'.eslintrc.{js,cjs}'
 			],
 			'parserOptions': {
-				'sourceType': 'script'
+				'sourceType': 'script',
 			}
 		}
 	],
 	'parser': '@typescript-eslint/parser',
 	'parserOptions': {
 		'ecmaVersion': 'latest',
-		'sourceType': 'module'
+		'sourceType': 'module',
+		'project': './tsconfig.json',
+		'tsconfigRootDir': __dirname
 	},
 	'plugins': [
 		'@typescript-eslint',
@@ -57,5 +60,8 @@ module.exports = {
         'arrowParens': 'always'
       }
     ]
-	}
+	},
+	'ignorePatterns': [
+		'**/*.js',
+	]
 };
